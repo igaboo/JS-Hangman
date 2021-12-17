@@ -63,7 +63,6 @@ function resetGame() {
     "z",
   ];
   wordBank = storedWordBank;
-
   const elements = document.getElementsByName("difficulty");
 
   for (i = 0; i < elements.length; i++) {
