@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Hangman Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="display">
+        <h1 id="hidden-text">Welcome to <i>Hangman</i></h1>
+      </div>
+      <div class="prompt">
+        <p id="message">SELECT A DIFFICULTY, THEN PRESS START.</p>
+        <h3 id="letter-bank">GOOD LUCK!</h3>
+        <p id="hint-message">You start with 3 hints.</>
+          <div class="difficulties">
+            <input type="radio" name="difficulty" value="hard">Hard</input>
+            <input type="radio" name="difficulty" value="medium">Medium</input>
+            <input type="radio" name="difficulty" value="easy">Easy</input>
+          </div>
+      </div>
+
+      <div class="keyboard">
+        <button class="key top-left" value="a" id="a" onclick="keyPress(this.value)">A</button>
+        <button class="key" value="b" id="b" onclick="keyPress(this.value)">B</button>
+        <button class="key" value="c" id="c" onclick="keyPress(this.value)">C</button>
+        <button class="key top-right" value="d" id="d" onclick="keyPress(this.value)">D</button>
+        <button class="key" value="e" id="e" onclick="keyPress(this.value)">E</button>
+        <button class="key" value="f" id="f" onclick="keyPress(this.value)">F</button>
+        <button class="key" value="g" id="g" onclick="keyPress(this.value)">G</button>
+        <button class="key" value="h" id="h" onclick="keyPress(this.value)">H</button>
+        <button class="key" value="i" id="i" onclick="keyPress(this.value)">I</button>
+        <button class="key" value="j" id="j" onclick="keyPress(this.value)">J</button>
+        <button class="key" value="k" id="k" onclick="keyPress(this.value)">K</button>
+        <button class="key" value="l" id="l" onclick="keyPress(this.value)">L</button>
+        <button class="key" value="m" id="m" onclick="keyPress(this.value)">M</button>
+        <button class="key" value="n" id="n" onclick="keyPress(this.value)">N</button>
+        <button class="key" value="o" id="o" onclick="keyPress(this.value)">O</button>
+        <button class="key" value="p" id="p" onclick="keyPress(this.value)">P</button>
+        <button class="key" value="q" id="q" onclick="keyPress(this.value)">Q</button>
+        <button class="key" value="r" id="r" onclick="keyPress(this.value)">R</button>
+        <button class="key" value="s" id="s" onclick="keyPress(this.value)">S</button>
+        <button class="key" value="t" id="t" onclick="keyPress(this.value)">T</button>
+        <button class="key" value="u" id="u" onclick="keyPress(this.value)">U</button>
+        <button class="key" value="v" id="v" onclick="keyPress(this.value)">V</button>
+        <button class="key" value="w" id="w" onclick="keyPress(this.value)">W</button>
+        <button class="key" value="x" id="x" onclick="keyPress(this.value)">X</button>
+        <button class="key bottom-left" value="y" id="y" onclick="keyPress(this.value)">Y</button>
+        <button class="key" value="z" id="z" onclick="keyPress(this.value)">Z</button>
+        <button id="reset" onclick="resetGame()">Start</button>
+        <button class="bottom-right" id="hint" onclick="getHint(secretWord)">Hint</button>
+      </div>
+    </div>
+    
+    <script src="./words.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
