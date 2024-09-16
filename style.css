@@ -16,9 +16,6 @@ body {
   place-items: center;
 
   height: 100vh;
-  background-size: cover;
-
-  background-image: url(https://cdn-cfmok.nitrocdn.com/juJsjTwdTqWjkJBaBrLnvLeovPsDevAD/assets/static/optimized/rev-b5a7330/wp-content/uploads/1588190726_113_4K-Nature-Wallpapers-2020.jpg);
 }
 
 .container {
@@ -48,7 +45,7 @@ body {
 
   line-height: 0.8;
 
-  width: 300px;
+  width: 350px;
   height: 75px;
 }
 

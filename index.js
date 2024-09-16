@@ -19,6 +19,18 @@ const letterBank = document.getElementById("letter-bank");
 const resetButton = document.getElementById("reset");
 const hintMessage = document.getElementById("hint-message");
 
+window.addEventListener(
+  "keydown",
+  function (e) {
+    keyPress(e.key);
+  },
+  false
+);
+
+function myFunction(value) {
+  console.log(value);
+}
+
 function checkWinLose() {
   if (attempts < 1) {
     message.innerHTML =
